@@ -22,26 +22,28 @@ let select = document.getElementById("breed-dropdown");
 fetch(breedUrl)
 .then(response => response.json())
 .then(data => {
+  let breedsArray = [];
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
     li.className = "breed-item";
     ulBreeds.appendChild(li);
+    breedsArray.push(li)
+    console.log(breedsArray);
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
     })
   }
   //Challenge 4
-let breedsArray = document.getElementsByClassName("breed-item");
-console.log(breedsArray);
-  if (select.value === "a"){
+
+  /*if (select.value === "a"){
 breedsArray.filter(li => {
   let string = li.innerHTML;
   return string.charAt(0) === "a";
 })
 }
-    ulBreeds.appendChild(li);
+    ulBreeds.appendChild(li);*/
 })
 
 
