@@ -33,8 +33,6 @@ fetch(breedUrl)
       li.style.color = "blue";
     })
   }
-  console.log(breedsArray)
-  console.log(breedsArray[0].innerHTML)
 })
 //Challenge 4
 console.log(selectBar.value)
@@ -52,7 +50,7 @@ else if (select.value === "b"){
 if (li.innerHTML.charAt(0) === "b")
 return li;
 })
-b.forEach(ele => ulBreeds.appendChild(ele))
+b.forEach(ele2 => ulBreeds.appendChild(ele2))
 
 }
 else if (select.value === "c"){
