@@ -27,6 +27,7 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     //ulBreeds.appendChild(li);
+    console.log(li)
     breedsArray.push(li)
     //Challenge 3
     li.addEventListener("click", () => {
@@ -39,7 +40,7 @@ fetch(breedUrl)
 if (selectBar.value === "a"){
   console.log(selectBar.value)
 
-  let a = breedsArray.filter(li => {console.log(li)
+  let a = breedsArray.filter(li => {
   if (li.innerHTML.charAt(0) === "a")
   return li;
 
