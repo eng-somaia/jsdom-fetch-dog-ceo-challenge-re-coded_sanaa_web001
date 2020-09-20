@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //Challenge 2
 const breedUrl = 'https://dog.ceo/api/breeds/list/all';
 let ulBreeds = document.getElementById('dog-breeds');
-let select = document.getElementById("breed-dropdown");
+let selectBar = document.getElementById("breed-dropdown");
 
 fetch(breedUrl)
 .then(response => response.json())
@@ -34,18 +34,29 @@ fetch(breedUrl)
     })
   }
   //Challenge 4
-  if (select.value === "a"){
-breedsArray.filter(li => {
-  li.charAt(0) === "a"
-})}
-console.log("here");
+  if (selectBar.value === "a"){
+    breedsArray.filter(li => {
+    if (li.charAt(0) === "a")
+    return li;
+    })
+}
 if (select.value === "b"){
-  console.log("here");
-let b =breedsArray.filter(li => {
+   breedsArray.filter(li => {
   if (li.charAt(0) === "b")
   return li;
 })
-console.log(b)
+}
+if (select.value === "c"){
+   breedsArray.filter(li => {
+  if (li.charAt(0) === "c")
+  return li;
+})
+}
+if (select.value === "d"){
+   breedsArray.filter(li => {
+  if (li.charAt(0) === "d")
+  return li;
+})
 }
 })
 });
