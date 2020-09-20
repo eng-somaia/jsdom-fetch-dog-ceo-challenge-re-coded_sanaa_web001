@@ -27,6 +27,7 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     breedsArray.push(li);
+    //Challenge 4
     console.log(selectBar.value)
     if (selectBar.value === "a"){
       console.log(selectBar.value)
@@ -35,7 +36,6 @@ fetch(breedUrl)
       return li;
       })
       a.forEach(ele => ulBreeds.appendChild(ele))
-
     }
     else if (select.value === "b"){
      let b = breedsArray.filter(li => {
@@ -43,19 +43,20 @@ fetch(breedUrl)
     return li;
     })
     b.forEach(ele2 => ulBreeds.appendChild(ele2))
-
     }
     else if (select.value === "c"){
-     breedsArray.filter(li => {
+     let c = breedsArray.filter(li => {
     if (li.innerHTML.charAt(0) === "c")
     return li;
     })
+    c.forEach(ele3 => ulBreeds.appendChild(ele3))
     }
     else if (select.value === "d"){
-     breedsArray.filter(li => {
+     let d = breedsArray.filter(li => {
      if (li.innerHTML.charAt(0) === "d")
     return li;
     })
+    d.forEach(ele4 => ulBreeds.appendChild(ele4))
     }
     else
     ulBreeds.appendChild(li);
@@ -66,6 +67,4 @@ fetch(breedUrl)
     })
   }
 })
-//Challenge 4
-
 });
