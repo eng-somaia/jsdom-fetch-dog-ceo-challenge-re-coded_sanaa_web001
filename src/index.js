@@ -37,6 +37,8 @@ fetch(breedUrl)
   console.log(breedsArray[0].innerHTML)
 })
 //Challenge 4
+console.log(selectBar.value)
+
 if (selectBar.value === "a"){
   console.log(selectBar.value)
   let a = breedsArray.filter(li => {
