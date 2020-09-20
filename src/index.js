@@ -42,6 +42,7 @@ if (selectBar.value === "a"){
   let a = breedsArray.filter(li => {
   if (li.innerHTML.charAt(0) === "a")
   return li;
+  console.log(li)
   })
   a.forEach(ele => ulBreeds.appendChild(ele))
 
