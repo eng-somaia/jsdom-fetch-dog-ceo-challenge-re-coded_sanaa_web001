@@ -26,7 +26,7 @@ fetch(breedUrl)
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
-    ulBreeds.appendChild(li);
+  //  ulBreeds.appendChild(li);
     breedsArray.push(li.innerHTML)
     //Challenge 3
     li.addEventListener("click", () => {
@@ -43,7 +43,8 @@ fetch(breedUrl)
 else if (select.value === "b"){
    breedsArray.filter(li => {
   if (li.charAt(0) === "b")
-  return li;
+  return ulBreeds.appendChild(li);
+;
 })
 }
 else if (select.value === "c"){
