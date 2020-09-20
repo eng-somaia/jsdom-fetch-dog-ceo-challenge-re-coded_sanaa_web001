@@ -33,7 +33,7 @@ fetch(breedUrl)
     li.addEventListener("click", () => {
       li.style.color = "blue";
     })
-  } 
+  }
   //Challenge 4
   if (select.value === "a"){
 breedsArray.filter(li => li.charAt(0) === "a")
