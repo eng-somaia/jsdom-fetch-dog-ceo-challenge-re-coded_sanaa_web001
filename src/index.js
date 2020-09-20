@@ -27,6 +27,39 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     breedsArray.push(li);
+    console.log(selectBar.value)
+    if (selectBar.value === "a"){
+      console.log(selectBar.value)
+      let a = breedsArray.filter(li => {
+      if (li.innerHTML.charAt(0) === "a")
+      return li;
+      })
+      a.forEach(ele => ulBreeds.appendChild(ele))
+
+    }
+    else if (select.value === "b"){
+     let b = breedsArray.filter(li => {
+    if (li.innerHTML.charAt(0) === "b")
+    return li;
+    })
+    b.forEach(ele2 => ulBreeds.appendChild(ele2))
+
+    }
+    else if (select.value === "c"){
+     breedsArray.filter(li => {
+    if (li.innerHTML.charAt(0) === "c")
+    return li;
+    })
+    }
+    else if (select.value === "d"){
+     breedsArray.filter(li => {
+     if (li.innerHTML.charAt(0) === "d")
+    return li;
+    })
+    }
+    else
+    ulBreeds.appendChild(li);
+
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
@@ -34,37 +67,5 @@ fetch(breedUrl)
   }
 })
 //Challenge 4
-console.log(selectBar.value)
-if (selectBar.value === "a"){
-  console.log(selectBar.value)
-  let a = breedsArray.filter(li => {
-  if (li.innerHTML.charAt(0) === "a")
-  return li;
-  })
-  a.forEach(ele => ulBreeds.appendChild(ele))
-
-}
-else if (select.value === "b"){
- let b = breedsArray.filter(li => {
-if (li.innerHTML.charAt(0) === "b")
-return li;
-})
-b.forEach(ele2 => ulBreeds.appendChild(ele2))
-
-}
-else if (select.value === "c"){
- breedsArray.filter(li => {
-if (li.innerHTML.charAt(0) === "c")
-return li;
-})
-}
-else if (select.value === "d"){
- breedsArray.filter(li => {
- if (li.innerHTML.charAt(0) === "d")
-return li;
-})
-}
-else
-ulBreeds.appendChild(li);
 
 });
