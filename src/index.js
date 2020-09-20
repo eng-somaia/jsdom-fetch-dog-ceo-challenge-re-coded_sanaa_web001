@@ -35,16 +35,13 @@ fetch(breedUrl)
   }
   console.log(breedsArray)
   console.log(breedsArray[0].innerHTML)
-  //Challenge 4
-
 })
+//Challenge 4
 if (selectBar.value === "a"){
   console.log(selectBar.value)
-
   let a = breedsArray.filter(li => {
   if (li.innerHTML.charAt(0) === "a")
   return li;
-
   })
   a.forEach(ele => ulBreeds.appendChild(ele))
 
