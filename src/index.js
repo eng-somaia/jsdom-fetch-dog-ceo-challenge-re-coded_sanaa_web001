@@ -29,12 +29,12 @@ fetch(breedUrl)
     li.className = "breed-item";
     ulBreeds.appendChild(li);
     breedsArray.push(li)
-    console.log(breedsArray);
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
     })
-  }
+  }    console.log(breedsArray);
+
   //Challenge 4
 
   /*if (select.value === "a"){
