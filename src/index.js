@@ -37,12 +37,12 @@ fetch(breedUrl)
   if (select.value === "a"){
 breedsArray.filter(li => {
   li.charAt(0) === "a"
-  ulBreeds.appendChild(li);
 })
 if (select.value === "b"){
-breedsArray.filter(li => {li.charAt(0) === "b"
-ulBreeds.appendChild(li);
+let b =breedsArray.filter(li => {
+  li.charAt(0) === "b"
 })
+console.log(b)
 }
 })
 
