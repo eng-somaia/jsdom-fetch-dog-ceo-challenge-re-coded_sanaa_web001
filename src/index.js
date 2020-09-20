@@ -34,6 +34,7 @@ fetch(breedUrl)
   }
   //Challenge 4
 let breedsArray = document.getElementsByClassName("breed-item");
+console.log(breedsArray);
   if (select.value === "a"){
 breedsArray.filter(li => {
   let string = li.innerHTML;
