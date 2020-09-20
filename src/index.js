@@ -27,7 +27,7 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     //ulBreeds.appendChild(li);
-    
+
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
