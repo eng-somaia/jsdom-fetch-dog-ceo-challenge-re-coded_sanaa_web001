@@ -33,17 +33,11 @@ fetch(breedUrl)
     li.addEventListener("click", () => {
       li.style.color = "blue";
     })
-  }    console.log(breedsArray);
-
+  } 
   //Challenge 4
-
-  /*if (select.value === "a"){
-breedsArray.filter(li => {
-  let string = li.innerHTML;
-  return string.charAt(0) === "a";
-})
+  if (select.value === "a"){
+breedsArray.filter(li => li.charAt(0) === "a")
 }
-    ulBreeds.appendChild(li);*/
 })
 
 
