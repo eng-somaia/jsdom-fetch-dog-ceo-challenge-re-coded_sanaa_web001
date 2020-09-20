@@ -40,19 +40,19 @@ fetch(breedUrl)
     return li;
     })
 }
-if (select.value === "b"){
+else if (select.value === "b"){
    breedsArray.filter(li => {
   if (li.charAt(0) === "b")
   return li;
 })
 }
-if (select.value === "c"){
+else if (select.value === "c"){
    breedsArray.filter(li => {
   if (li.charAt(0) === "c")
   return li;
 })
 }
-if (select.value === "d"){
+else if (select.value === "d"){
    breedsArray.filter(li => {
   if (li.charAt(0) === "d")
   return li;
