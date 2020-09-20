@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
 const breedUrl = 'https://dog.ceo/api/breeds/list/all';
 let ulBreeds = document.getElementById('dog-breeds');
 let selectBar = document.getElementById("breed-dropdown");
+let breedsArray = [];
 
 fetch(breedUrl)
 .then(response => response.json())
 .then(data => {
-  let breedsArray = [];
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
