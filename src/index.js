@@ -26,7 +26,7 @@ fetch(breedUrl)
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
-  //  ulBreeds.appendChild(li);
+    ulBreeds.appendChild(li);
     breedsArray.push(li.innerHTML)
     //Challenge 3
     li.addEventListener("click", () => {
