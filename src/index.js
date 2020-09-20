@@ -64,7 +64,7 @@ else if (select.value === "d"){
 return li;
 })
 }
-else 
+else
 ulBreeds.appendChild(li);
 
 });
