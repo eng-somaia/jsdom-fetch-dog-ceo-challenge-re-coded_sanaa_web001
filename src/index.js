@@ -32,8 +32,9 @@ fetch(breedUrl)
     li.addEventListener("click", () => {
       li.style.color = "blue";
     })
-    breedsArray.push(li);console.log(breedsArray)
   }
+  breedsArray.push(li);console.log(breedsArray)
+
   //Challenge 4
 
 })
