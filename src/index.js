@@ -28,7 +28,7 @@ fetch(breedUrl)
     li.innerHTML = property;
     li.className = "breed-item";
     ulBreeds.appendChild(li);
-    breedsArray.push(li)
+    breedsArray.push(li.innerHTML)
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
