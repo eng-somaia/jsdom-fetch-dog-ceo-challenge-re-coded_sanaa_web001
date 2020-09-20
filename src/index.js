@@ -34,6 +34,7 @@ fetch(breedUrl)
     })
   }
   console.log(breedsArray)
+  console.log(breedsArray[0].innerHTML)
   //Challenge 4
 
 })
