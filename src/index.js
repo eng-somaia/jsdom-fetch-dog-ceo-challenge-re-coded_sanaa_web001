@@ -34,32 +34,33 @@ fetch(breedUrl)
     })
   }
   //Challenge 4
-  if (selectBar.value === "a"){
-    let a = breedsArray.filter(li => {
-    if (li.charAt(0) === "a")
-    return li;
-    })
-    a.forEach(ele => ulBreeds.appendChild(ele))
+
+})
+if (selectBar.value === "a"){
+  let a = breedsArray.filter(li => {
+  if (li.charAt(0) === "a")
+  return li;
+  })
+  a.forEach(ele => ulBreeds.appendChild(ele))
 
 }
 else if (select.value === "b"){
-   breedsArray.filter(li => {
-  if (li.charAt(0) === "b")
-  return ulBreeds.appendChild(li);
+ breedsArray.filter(li => {
+if (li.charAt(0) === "b")
+return ulBreeds.appendChild(li);
 ;
 })
 }
 else if (select.value === "c"){
-   breedsArray.filter(li => {
-  if (li.charAt(0) === "c")
-  return li;
+ breedsArray.filter(li => {
+if (li.charAt(0) === "c")
+return li;
 })
 }
 else if (select.value === "d"){
-   breedsArray.filter(li => {
-  if (li.charAt(0) === "d")
-  return li;
+ breedsArray.filter(li => {
+if (li.charAt(0) === "d")
+return li;
 })
 }
-})
 });
