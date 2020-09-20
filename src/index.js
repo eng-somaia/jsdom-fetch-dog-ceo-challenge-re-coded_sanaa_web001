@@ -27,7 +27,8 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     breedsArray.push(li);
-    //Challenge 4
+
+//Challenge 4
     console.log(selectBar.value)
     if (selectBar.value === "a"){
       console.log(selectBar.value)
