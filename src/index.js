@@ -26,7 +26,6 @@ fetch(breedUrl)
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
-    ulBreeds.appendChild(li);
     breedsArray.push(li);
     //Challenge 3
     li.addEventListener("click", () => {
@@ -65,4 +64,7 @@ else if (select.value === "d"){
 return li;
 })
 }
+else 
+ulBreeds.appendChild(li);
+
 });
