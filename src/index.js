@@ -27,11 +27,11 @@ fetch(breedUrl)
     let li = document.createElement("li")
     li.innerHTML = property;
     //ulBreeds.appendChild(li);
-    breedsArray.push(li);console.log(breedsArray)
+    
     //Challenge 3
     li.addEventListener("click", () => {
       li.style.color = "blue";
-    })
+    })breedsArray.push(li);console.log(breedsArray)
   }
   //Challenge 4
 
