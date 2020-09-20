@@ -41,6 +41,7 @@ breedsArray.filter(li => {
 
 let b =breedsArray.filter(li => {
   li.charAt(0) === "b"
+  return li;
 })
 console.log(b)
 
