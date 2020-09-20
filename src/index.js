@@ -37,7 +37,7 @@ fetch(breedUrl)
   if (select.value === "a"){
 breedsArray.filter(li => {
   li.charAt(0) === "a"
-})
+})}
 if (select.value === "b"){
 let b =breedsArray.filter(li => {
   li.charAt(0) === "b"
