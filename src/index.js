@@ -35,11 +35,11 @@ fetch(breedUrl)
   }
   //Challenge 4
   if (selectBar.value === "a"){
-    breedsArray.filter(li => {
+    let a = breedsArray.filter(li => {
     if (li.charAt(0) === "a")
     return li;
     })
-    ulBreeds.appendChild(li);
+    a.forEach(ele => ulBreeds.appendChild(ele))
 
 }
 else if (select.value === "b"){
