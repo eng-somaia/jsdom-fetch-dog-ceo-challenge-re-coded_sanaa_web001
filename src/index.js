@@ -39,6 +39,8 @@ fetch(breedUrl)
     if (li.charAt(0) === "a")
     return li;
     })
+    ulBreeds.appendChild(li);
+
 }
 else if (select.value === "b"){
    breedsArray.filter(li => {
