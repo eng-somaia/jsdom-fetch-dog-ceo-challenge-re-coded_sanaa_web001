@@ -26,7 +26,7 @@ fetch(breedUrl)
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
-    //ulBreeds.appendChild(li);
+    ulBreeds.appendChild(li);
     breedsArray.push(li);
     //Challenge 3
     li.addEventListener("click", () => {
@@ -38,7 +38,6 @@ fetch(breedUrl)
 })
 //Challenge 4
 console.log(selectBar.value)
-
 if (selectBar.value === "a"){
   console.log(selectBar.value)
   let a = breedsArray.filter(li => {
@@ -50,21 +49,21 @@ if (selectBar.value === "a"){
 }
 else if (select.value === "b"){
  let b = breedsArray.filter(li => {
-if (li.charAt(0) === "b")
-return ulBreeds.appendChild(li);
+if (li.innerHTML.charAt(0) === "b")
+return li;
 })
 b.forEach(ele => ulBreeds.appendChild(ele))
 
 }
 else if (select.value === "c"){
  breedsArray.filter(li => {
-if (li.charAt(0) === "c")
+if (li.innerHTML.charAt(0) === "c")
 return li;
 })
 }
 else if (select.value === "d"){
  breedsArray.filter(li => {
-if (li.charAt(0) === "d")
+ if (li.innerHTML.charAt(0) === "d")
 return li;
 })
 }
