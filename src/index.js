@@ -26,7 +26,6 @@ fetch(breedUrl)
   for (const property in data.message){
     let li = document.createElement("li")
     li.innerHTML = property;
-    li.className = "breed-item";
     ulBreeds.appendChild(li);
     breedsArray.push(li.innerHTML)
     //Challenge 3
@@ -36,7 +35,14 @@ fetch(breedUrl)
   }
   //Challenge 4
   if (select.value === "a"){
-breedsArray.filter(li => li.charAt(0) === "a")
+breedsArray.filter(li => {
+  li.charAt(0) === "a"
+  ulBreeds.appendChild(li);
+})
+if (select.value === "b"){
+breedsArray.filter(li => {li.charAt(0) === "b"
+ulBreeds.appendChild(li);
+})
 }
 })
 
